@@ -1,0 +1,22 @@
+img {
+    width: 100%;
+    max-width: 300px;
+}
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.title {
+    display: inline;
+    width: 100%;
+    text-align: center;
+    
+}

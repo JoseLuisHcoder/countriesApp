@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import CountrieCard from './components/CountrieCard'
 import axios from 'axios'
+import Loading from './components/Loading'
 
 function App() {
 
@@ -23,10 +24,14 @@ function App() {
 
   return (
     <div className="App">
-      <h1>App Countries</h1>
+      <h1 className='title'>App Countries</h1>
       {
+        isLoading ?
+        <Loading /> :
         countries?.map(country => (
-          <CountrieCard  country={country}/>
+          <CountrieCard  
+          key={country.name}
+          country={country}/>
         ))
       }
 

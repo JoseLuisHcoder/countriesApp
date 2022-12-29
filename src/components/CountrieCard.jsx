@@ -10,12 +10,12 @@ const CountrieCard = ({country}) => {
 
     console.log(country);
   return (
-    <div>
+    <div className='card__container'>
         <div>
             <img src={country.flags.png} alt="" />
         </div>
         <ul>
-            <li>{country.altSpellings}</li>
+            <li>{country.name}</li>
         </ul>
     </div>
   )
